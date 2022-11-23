@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>layout04</title>
+    <style>
+      /* reset */
+      * {
+        font-size: inherit;
+        font-weight: inherit;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      ul,
+      ol {
+        list-style: none;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      em,
+      i,
+      address {
+        font-style: normal;
+      }
+
+      body {
+        line-height: 1;
+      }
+
+      /* header */
+
+      .hd {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 90px;
+        background: coral;
+      }
+
+      .hd .logo {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 200px;
+        height: 50px;
+        background: cornflowerblue;
+      }
+
+      .hd .hd_menu {
+        margin: 0 auto;
+        height: 90px;
+        display: flex;
+        width: 1200px;
+        gap: 30px;
+        background: seagreen;
+      }
+
+      .hd .hd_menu li {
+        flex: 1;
+        text-align: center;
+        line-height: 90px;
+        background: saddlebrown;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hd">
+      <h1 class="logo">
+        <i>로고</i>
+      </h1>
+      <ul class="hd_menu">
+        <li>menu01</li>
+        <li>menu02</li>
+        <li>menu03</li>
+        <li>menu04</li>
+      </ul>
+    </header>
+    <main class="main">
+      <section class="sc sc01">
+        <h2>SLOGAN</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+          voluptatem commodi voluptatibus tempora perspiciatis consectetur
+          libero doloremque earum repellendus autem?
+        </p>
+      </section>
+      <section class="sc sc02">
+        <h2>Lorem ipsum dolor sit.</h2>
+        <article></article>
+        <article></article>
+        <article></article>
+      </section>
+      <section class="sc sc03">
+        <h2>Lorem ipsum dolor sit.</h2>
+        <article></article>
+        <article></article>
+        <article></article>
+      </section>
+      <footer class="foter"></footer>
+    </main>
+  </body>
+</html>

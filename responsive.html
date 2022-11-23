@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>반응형 웹 01</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <style>
+      .mopen {
+        z-index: 999;
+        display: none;
+      }
+
+      @media (max-width: 768px) {
+        .mopen {
+          position: fixed;
+          top: 30px;
+          right: 30px;
+          display: block;
+        }
+      }
+
+      .main {
+        position: relative;
+        height: 100vh;
+        background: url(./bg.svg) no-repeat center center / cover;
+        font-size: 2.5vh;
+      }
+
+      .main .main_content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .content {
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="mopen">
+      <i class="xi-bars"></i>
+    </button>
+    <section class="main">
+      <div class="main_content">
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius
+          expedita voluptatum facilis sint cum maiores. Mollitia, incidunt
+          nihil.
+        </p>
+      </div>
+    </section>
+    <section>
+      <div class="content"></div>
+    </section>
+  </body>
+</html>
